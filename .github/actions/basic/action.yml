@@ -1,0 +1,11 @@
+name: "Basic Print Action"
+description: "A simple action to print environment variables from a shell script"
+
+runs:
+  using: "composite"
+  steps:
+    - shell: bash
+      run: ./run.sh
+      env:
+        MY_ENV_VAR1: ${{ inputs.input1 }}
+        MY_ENV_VAR2: ${{ inputs.input2 }}

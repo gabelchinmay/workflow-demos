@@ -1,0 +1,14 @@
+name: "Test Basic Action"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Basic Print Action
+        uses: ./.github/actions/basic
+        with:
+          input1: "Hello from Input 1"
+          input2: "This is Input 2"
