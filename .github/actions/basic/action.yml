@@ -5,7 +5,7 @@ runs:
   using: "composite"
   steps:
     - shell: bash
-      run: ls -lrth
+      run: ./.github/actions/basic/run.sh
       env:
         MY_ENV_VAR1: ${{ inputs.input1 }}
         MY_ENV_VAR2: ${{ inputs.input2 }}
