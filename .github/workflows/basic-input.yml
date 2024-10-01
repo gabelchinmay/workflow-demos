@@ -8,10 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Run Basic Print Action
-        uses: ./.github/actions/basic-action
+        uses: ./.github/actions/basic
         with:
           input1: "Hello from Input 1"
           input2: "This is Input 2"
